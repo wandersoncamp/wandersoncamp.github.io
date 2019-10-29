@@ -1,0 +1,32 @@
+header img {
+	margin-left: 15px;
+}
+
+header {
+		background-color: #B0C4DE;
+	} 
+
+nav {
+	margin-top: 100px;
+	margin-right: 80px;
+	float: right;	
+	font-family: verdana;
+	font-size: 150%;
+	word-spacing: 15px;
+}
+
+.link:link,.link:visited {	text-decoration: none; color:black; }
+.link:hover {text-decoration: none;color: white}
+.link:active {text-decoration: none}
+
+body {
+	font-family: verdana;
+	background-color: white;
+	margin: 0px; 
+	}
+
+footer {position:absolute;
+ 		background-color: #87CEEB;
+ 		bottom:0;
+ 		width:100%;
+		} 
