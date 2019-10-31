@@ -45,7 +45,7 @@ body {
 	}
 
 footer {
-		position:absolute;
+		position:fixed;
 		font-weight: bold;
  		background-color: #57D2AC;
  		bottom:0;
