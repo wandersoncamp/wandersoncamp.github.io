@@ -7,9 +7,9 @@ header {
 	background-color: #F5F5F5;
 	display: flex;
 	display: flex;
-	 align-items: center;
-	  justify-content: space-between;	  
-	   margin: 0 auto;
+	align-items: center;
+	justify-content: space-between;	  
+	margin: 0 auto;
 } 
 
 h1 {
@@ -25,20 +25,32 @@ h1 {
 	  list-style:none;
  	  border:2px outset #c0c0c0; 
  	  border-radius: 5px;
- 	  float:left
-
- 	  
+ 	  float:left 	  
  	}
 
 nav .menu {
 	margin-right:20px;
-	margin-top:60px; 
-}
+	margin-top:60px;
+	display: flex;	
+	flex-direction:row;
+	
+	}
+
+	@media (max-width: 600px)  {
+
+		nav .menu {
+				flex-direction:column;
+				margin-right:20px;
+	margin-top:60px;
+			}
+	} 
+
+
+
 .menu li{
 		 position:relative;
  		 float: left;
   		 border-right:1px solid #c0c0c0;
-
   		}
 
 .menu li a{ 
@@ -55,6 +67,7 @@ nav .menu {
 	 			-webkit-box-shadow:0 3px 10px 0 #ccc; 
 	 			text-shadow:0px 0px 5px #fff; 
 	 			padding-left:10px;
+	 			flex-direction: column;
 	 		}
 
 .menu li ul{
@@ -68,7 +81,6 @@ nav .menu {
 
 .menu li ul li{border:1px solid #c0c0c0; 
 				display:block; width:150px;
-
 				}
 
 .box-all{
@@ -106,32 +118,31 @@ nav .menu {
 }
 
 .box-img button{
-	font-family: courier,arial,helvetica;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
-	color: #1f1e1b;
+	color: #ffffff;
 	padding: 10px 20px;
 	background: -webkit-gradient(
 		linear, left top, left bottom,
-		from(#b3b3b3),
-		color-stop(0.50, #ffffff),
-		to(#d6d6d6));
+		from(#a3a3a3),
+		color-stop(0.50, #3b3b3b),
+		color-stop(0.50, #242424),
+		to(#000000));
 	background: linear-gradient(
 		top,
-		#b3b3b3 0%,
-		#ffffff 50%,
-		#d6d6d6);
+		#a3a3a3 0%,
+		#3b3b3b 50%,
+		#242424 50%,
+		#000000);
 	border-radius: 10px;
-	border: 3px solid #363123;
+	border: 1px solid #000000;
 	box-shadow:
-		0px 1px 3px rgba(043,023,043,0.5),
-		inset 0px 0px 3px rgba(000,000,000,1);
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.6);
 	text-shadow:
-		0px -1px 0px rgba(000,000,000,0.1),
-		0px 1px 0px rgba(168,140,168,1);
-	align-items: center;
-	text-align: center;
-	margin-top: 2%;
-	position:relative;	
+		0px -1px 0px rgba(000,000,000,1),
+		0px 1px 0px rgba(255,255,255,0.2);
+
 }
 
 .box-all p {
